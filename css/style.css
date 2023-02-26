@@ -39,7 +39,6 @@ body{
 }
 
 .imagen-dex > img{
-    object-fit: cover;
     height: 220px;
     width: 220px;
     background-color: rgb(197, 228, 171);
@@ -47,12 +46,26 @@ body{
 }
 
 #input-num{
-    height: 25px;
+    height: 28px;
+    width: 240px;
     background-color: rgb(236, 236, 129);
+    text-align: center;
+    font-size:larger;
+    font-weight: 600;
+}
+
+#input-num2{
+    height: 28px;
+    width: 240px;
+    background-color: rgb(236, 236, 129);
+    text-align: center;
+    font-size:larger;
+    font-weight: 600;
 }
 
 #cnt-btns{
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -87,4 +100,20 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.fa-star{
+    color: yellow;
+    padding-left: 20px;
+    
+}
+
+.fa-shuffle{
+    color: rgb(24, 24, 24);
+    padding-right: 20px;    
+}
+
+.fa-star:hover , .fa-shuffle:hover{
+    cursor: pointer;
+    transform: scale(115%);
 }
